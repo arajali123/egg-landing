@@ -97,16 +97,18 @@
           <p class="sec-desc">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve your
             store design, boosting engagement and driving more sales.</p>
         </div>
-        <div class="demo-tabs">
-          <button class="tab active">All</button>
-          <button class="tab">Most Popular</button>
-          <button class="tab">Gallery Layout</button>
-          <button class="tab">Video Style</button>
-          <button class="tab">Effects & Animations</button>
-          <button class="tab">Advanced Features</button>
+        <div class="demo-tabs demo-button-group">
+          <button data-filter="*" class="active">All</button>
+          <button data-filter=".popular">Most Popular</button>
+          <button data-filter=".gallery">Gallery Layout</button>
+          <button data-filter=".video">Video Style</button>
+          <button data-filter=".animation">Effects & Animations</button>
+          <button data-filter=".feature">Advanced Features</button>
         </div>
-        <div class="demo-thumb-wrap">
-          <div class="demo-item">
+        <div class="demo-thumb-wrap demo-box">
+          <div class="filter-sizer"></div>
+          <div class="gutter-sizer"></div>
+          <div class="demo-item gallery">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-1.jpg" alt="Image">
             </div>
@@ -115,7 +117,7 @@
               <a class="view-btn" href="#">View</a>
             </div>
           </div>
-          <div class="demo-item">
+          <div class="demo-item feature">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-2.jpg" alt="Image">
             </div>
@@ -124,7 +126,7 @@
               <a class="view-btn" href="#">View</a>
             </div>
           </div>
-          <div class="demo-item">
+          <div class="demo-item animation">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-3.jpg" alt="Image">
             </div>
@@ -133,7 +135,7 @@
               <a class="view-btn" href="#">View</a>
             </div>
           </div>
-          <div class="demo-item">
+          <div class="demo-item gallery">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-4.jpg" alt="Image">
             </div>
@@ -142,7 +144,7 @@
               <a class="view-btn" href="#">View</a>
             </div>
           </div>
-          <div class="demo-item">
+          <div class="demo-item feature">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-5.jpg" alt="Image">
             </div>
@@ -151,7 +153,7 @@
               <a class="view-btn" href="#">View</a>
             </div>
           </div>
-          <div class="demo-item">
+          <div class="demo-item animation">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-6.jpg" alt="Image">
             </div>
@@ -160,7 +162,7 @@
               <a class="view-btn" href="#">View</a>
             </div>
           </div>
-          <div class="demo-item">
+          <div class="demo-item popular">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-7.jpg" alt="Image">
             </div>
@@ -169,7 +171,7 @@
               <a class="view-btn" href="#">View</a>
             </div>
           </div>
-          <div class="demo-item">
+          <div class="demo-item video">
             <div class="demo-thumb">
               <img src="assets/images/demo/demo-8.jpg" alt="Image">
             </div>
@@ -188,96 +190,6 @@
   <!-- end: Demo Section -->
 
   <!-- start: Feature Section -->
-  <section class="feature-section">
-    <div class="page-width">
-      <div class="sec-heading">
-        <h2 class="sec-title">Exclusive Features of <span class="accent">Most Popular</span></h2>
-        <p class="sec-desc">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve your
-          store design, boosting engagement and driving more sales.</p>
-      </div>
-      <div class="feature-main-wrap">
-        <div class="feature-content">
-          <details class="acc" open>
-            <summary><span class="num">1</span> Play Video on Hover <span class="chev"><svg width="24" height="24"
-                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span></summary>
-            <div class="body">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve
-              <ul>
-                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>Your store design, boosting </li>
-                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </span>Your store design, boosting </li>
-              </ul>
-            </div>
-          </details>
-          <details class="acc">
-            <summary><span class="num">2</span>Custom Photo Filter<span class="chev"><svg width="24" height="24"
-                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span></summary>
-            <div class="body">Open any image in a full-screen lightbox with swipe navigation, captions, and zoom — no
-              page reload.</div>
-          </details>
-          <details class="acc">
-            <summary><span class="num">3</span>Image Lightbox Popup<span class="chev"><svg width="24" height="24"
-                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span></summary>
-            <div class="body">Reveal an alternate angle, color, or lifestyle shot on hover so shoppers see more without
-              leaving the grid.</div>
-          </details>
-          <details class="acc">
-            <summary><span class="num">4</span>Open Video in a Popup on Click<span class="chev"><svg width="24"
-                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span></summary>
-            <div class="body">Layer product names, prices, and short captions over each tile to turn galleries into
-              shoppable storytelling.</div>
-          </details>
-          <details class="acc">
-            <summary><span class="num">5</span>Second Image on Hover<span class="chev"><svg width="24" height="24"
-                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span></summary>
-            <div class="body">Choose from zoom, fade, slide, and overlay animations to give every gallery a premium,
-              polished feel.</div>
-          </details>
-          <details class="acc">
-            <summary><span class="num">6</span>YouTube, Vimeo, Instagram Gallery<span class="chev"><svg width="24"
-                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
-              </span></summary>
-            <div class="body">Every template adapts automatically across desktop, tablet, and mobile so galleries look
-              sharp on any screen.</div>
-          </details>
-        </div>
-        <div class="feature-thumb">
-          <img src="assets/images/demo/feature-1.jpg" alt="Image">
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="feature-section v-1">
     <div class="page-width">
       <div class="sec-heading">
@@ -364,6 +276,276 @@
         </div>
         <div class="feature-thumb">
           <img src="assets/images/demo/feature-1.jpg" alt="Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feature-section">
+    <div class="page-width">
+      <div class="sec-heading style-2">
+        <h2 class="sec-title">Exclusive Features of <span class="accent">Gallery Layout</span></h2>
+        <p class="sec-desc">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve your
+          store design, boosting engagement and</p>
+      </div>
+      <div class="feature-main-wrap">
+        <div class="feature-thumb">
+          <img src="assets/images/demo/feature-2.jpg" alt="Image">
+        </div>
+        <div class="feature-content">
+          <details class="acc" open>
+            <summary><span class="num">1</span> Play Video on Hover <span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve
+              <ul>
+                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>Your store design, boosting </li>
+                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>Your store design, boosting </li>
+              </ul>
+            </div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">2</span>Custom Photo Filter<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Open any image in a full-screen lightbox with swipe navigation, captions, and zoom — no
+              page reload.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">3</span>Image Lightbox Popup<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Reveal an alternate angle, color, or lifestyle shot on hover so shoppers see more without
+              leaving the grid.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">4</span>Open Video in a Popup on Click<span class="chev"><svg width="24"
+                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Layer product names, prices, and short captions over each tile to turn galleries into
+              shoppable storytelling.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">5</span>Second Image on Hover<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Choose from zoom, fade, slide, and overlay animations to give every gallery a premium,
+              polished feel.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">6</span>YouTube, Vimeo, Instagram Gallery<span class="chev"><svg width="24"
+                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Every template adapts automatically across desktop, tablet, and mobile so galleries look
+              sharp on any screen.</div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feature-section">
+    <div class="page-width">
+      <div class="sec-heading style-2">
+        <h2 class="sec-title">Exclusive Features of <span class="accent">Video Style</span></h2>
+        <p class="sec-desc">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve your
+          store design, boosting engagement and </p>
+      </div>
+      <div class="feature-main-wrap">
+        <div class="feature-content">
+          <details class="acc" open>
+            <summary><span class="num">1</span> Play Video on Hover <span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve
+              <ul>
+                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>Your store design, boosting </li>
+                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>Your store design, boosting </li>
+              </ul>
+            </div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">2</span>Custom Photo Filter<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Open any image in a full-screen lightbox with swipe navigation, captions, and zoom — no
+              page reload.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">3</span>Image Lightbox Popup<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Reveal an alternate angle, color, or lifestyle shot on hover so shoppers see more without
+              leaving the grid.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">4</span>Open Video in a Popup on Click<span class="chev"><svg width="24"
+                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Layer product names, prices, and short captions over each tile to turn galleries into
+              shoppable storytelling.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">5</span>Second Image on Hover<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Choose from zoom, fade, slide, and overlay animations to give every gallery a premium,
+              polished feel.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">6</span>YouTube, Vimeo, Instagram Gallery<span class="chev"><svg width="24"
+                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Every template adapts automatically across desktop, tablet, and mobile so galleries look
+              sharp on any screen.</div>
+          </details>
+        </div>
+        <div class="feature-thumb">
+          <img src="assets/images/demo/feature-3.jpg" alt="Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="feature-section v-2">
+    <div class="page-width">
+      <div class="sec-heading style-2">
+        <h2 class="sec-title">Exclusive Features of <span class="accent">Advanced Features</span></h2>
+        <p class="sec-desc">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve your
+          store design, boosting engagement and </p>
+      </div>
+      <div class="feature-main-wrap">
+        <div class="feature-thumb">
+          <img src="assets/images/demo/feature-4.jpg" alt="Image">
+        </div>
+        <div class="feature-content">
+          <details class="acc" open>
+            <summary><span class="num">1</span> Play Video on Hover <span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Essential Grid Gallery is a value-packed, powerful Shopify app that helps to improve
+              <ul>
+                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>Your store design, boosting </li>
+                <li><span><svg width="14" height="13" viewBox="0 0 14 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.75 6.6875L5.5 11.4375L12.625 0.75" stroke="black" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </span>Your store design, boosting </li>
+              </ul>
+            </div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">2</span>Custom Photo Filter<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Open any image in a full-screen lightbox with swipe navigation, captions, and zoom — no
+              page reload.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">3</span>Image Lightbox Popup<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Reveal an alternate angle, color, or lifestyle shot on hover so shoppers see more without
+              leaving the grid.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">4</span>Open Video in a Popup on Click<span class="chev"><svg width="24"
+                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Layer product names, prices, and short captions over each tile to turn galleries into
+              shoppable storytelling.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">5</span>Second Image on Hover<span class="chev"><svg width="24" height="24"
+                  viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Choose from zoom, fade, slide, and overlay animations to give every gallery a premium,
+              polished feel.</div>
+          </details>
+          <details class="acc">
+            <summary><span class="num">6</span>YouTube, Vimeo, Instagram Gallery<span class="chev"><svg width="24"
+                  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.25 4.5L15.75 12L8.25 19.5" stroke="black" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </span></summary>
+            <div class="body">Every template adapts automatically across desktop, tablet, and mobile so galleries look
+              sharp on any screen.</div>
+          </details>
         </div>
       </div>
     </div>
@@ -1145,6 +1327,8 @@
     </div>
   </footer>
   <!-- end: Footer Area -->
+  <script src="assets/js/imagesloaded-pkgd.js"></script>
+  <script src="assets/js/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
