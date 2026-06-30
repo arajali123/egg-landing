@@ -126,6 +126,7 @@ img {
 
 /* Buttons */
 .btn-primary {
+	position: relative;
 	display: inline-block;
 	font-family: var(--sds-ff-heading);
 	font-weight: 500;
@@ -133,7 +134,27 @@ img {
 	padding: 19px 28px;
 	color: var(--card);
 	background: var(--accent);
+	overflow: hidden;
 	line-height: 1;
+}
+
+.btn-primary::before {
+	background: var(--card);
+	content: "";
+	height: 155px;
+	left: -75px;
+	opacity: 0.2;
+	position: absolute;
+	top: -50px;
+	transform: rotate(35deg);
+	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+	width: 50px;
+	z-index: 1;
+}
+
+.btn-primary:hover:before {
+	left: 120%;
+	transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .btn-transparent {
@@ -601,7 +622,13 @@ img {
 
 .demo-item .demo-content .demo-title {
 	font-weight: 400;
+	transition: 0.3s all;
 }
+
+.demo-item .demo-content .demo-title:hover {
+	color: var(--accent);
+}
+
 .demo-item .view-btn {
 	font-size: 15px;
 	font-family: var(--sds-ff-heading);
@@ -1001,6 +1028,20 @@ img {
 	padding-bottom: 120px;
 }
 
+.testimonial-section .testimonial-pagination {
+	text-align: center;
+}
+
+.testimonial-section
+	.testimonial-pagination
+	.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: var(--accent);
+}
+
+.testimonial-section .testimonial-mobile-slider {
+	display: none;
+}
+
 .testimonial-section::before {
 	content: "";
 	position: absolute;
@@ -1078,6 +1119,10 @@ img {
 	display: block;
 	font-size: 14px;
 	margin-top: 2px;
+}
+
+.reviews-item .reviews-rating ul li svg path {
+	fill: var(--gradient-2);
 }
 /* FAQ CSS */
 .faq-section {
@@ -1281,7 +1326,12 @@ img {
 	font-family: var(--sds-ff-heading);
 	font-size: 16px;
 	letter-spacing: 0.24px;
+	transition: 0.3s all;
 	line-height: 1;
+}
+
+.footer-menu .menu-list ul li a:hover {
+	color: var(--card);
 }
 
 .footer-menu .menu-list .footer-desc {
@@ -1494,6 +1544,12 @@ img {
 	.copyright-main-wrap {
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+	.testimonial-section .reviews-main-wrap {
+		display: none;
+	}
+	.testimonial-section .testimonial-mobile-slider {
+		display: block;
 	}
 }
 

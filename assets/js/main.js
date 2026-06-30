@@ -83,3 +83,20 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+
+// Testimonial Slider Js
+if ($(".testimonial-slider").length > 0) {
+	var testimonial = new Swiper(".testimonial-slider", {
+		slidesPerView: 1,
+		spaceBetween: 25,
+		loop: true,
+		speed: 1000,
+		autoplay: {
+			delay: 1500,
+		},
+		pagination: {
+			el: ".testimonial-pagination",
+			clickable: true,
+		},
+	});
+}
