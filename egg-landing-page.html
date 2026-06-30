@@ -15,9 +15,38 @@
 
   <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
 </head>
 
 <body>
+
+  <!-- start: Mobile Overly -->
+  <div class="body-overlay"></div>
+
+  <!-- start: Mobile Menu -->
+  <div class="mobile-menu-area">
+    <div class="mobile-main-wrapper">
+      <div class="mobile-menu-top">
+        <h3 class="title">Menu</h3>
+        <button class="close-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.591 9L17.6705 1.92048C17.775 1.81602 17.8578 1.692 17.9144 1.55551C17.9709 1.41902 18 1.27273 18 1.12499C18 0.977256 17.9709 0.830967 17.9144 0.694477C17.8578 0.557986 17.775 0.433968 17.6705 0.329503C17.566 0.225038 17.442 0.142171 17.3055 0.0856349C17.169 0.0290988 17.0227 0 16.875 0C16.7273 0 16.581 0.0290988 16.4445 0.0856349C16.308 0.142171 16.184 0.225038 16.0795 0.329503L9 7.40902L1.92048 0.329503C1.81602 0.225038 1.692 0.142171 1.55551 0.0856349C1.41902 0.0290988 1.27273 1.10072e-09 1.12499 0C0.977256 -1.10072e-09 0.830967 0.0290988 0.694477 0.0856349C0.557986 0.142171 0.433968 0.225038 0.329503 0.329503C0.225038 0.433968 0.142171 0.557986 0.0856349 0.694477C0.0290988 0.830967 -1.10072e-09 0.977256 0 1.12499C1.10072e-09 1.27273 0.0290988 1.41902 0.0856349 1.55551C0.142171 1.692 0.225038 1.81602 0.329503 1.92048L7.40902 9L0.329503 16.0795C0.225038 16.184 0.142171 16.308 0.0856349 16.4445C0.0290988 16.581 0 16.7273 0 16.875C0 17.0227 0.0290988 17.169 0.0856349 17.3055C0.142171 17.442 0.225038 17.566 0.329503 17.6705C0.433968 17.775 0.557986 17.8578 0.694477 17.9144C0.830967 17.9709 0.977256 18 1.12499 18C1.27273 18 1.41902 17.9709 1.55551 17.9144C1.692 17.8578 1.81602 17.775 1.92048 17.6705L9 10.591L16.0795 17.6705C16.184 17.775 16.308 17.8578 16.4445 17.9144C16.581 17.9709 16.7273 18 16.875 18C17.0227 18 17.169 17.9709 17.3055 17.9144C17.442 17.8578 17.566 17.775 17.6705 17.6705C17.775 17.566 17.8578 17.442 17.9144 17.3055C17.9709 17.169 18 17.0227 18 16.875C18 16.7273 17.9709 16.581 17.9144 16.4445C17.8578 16.308 17.775 16.184 17.6705 16.0795L10.591 9Z"
+              fill="#1A192E"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="nav-mobile-menu">
+        <a href="#">Home</a>
+        <a href="#">Categories</a>
+        <a href="#">Pages</a>
+        <a href="#">About Us</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </div>
+  <!-- end: Mobile Menu -->
 
   <!-- start: Header Area -->
   <header class="header-area">
@@ -35,8 +64,16 @@
         <div class="nav-actions">
           <a href="#" class="btn-primary">Try It Free</a>
         </div>
-        <button class="nav-toggle" aria-label="Open menu">☰</button>
+        <div class="mobile-toggle">
+          <button class="mobile-bar">
+            <svg width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6H20M4 12H20M4 18H20"></path>
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
     </div>
   </header>
   <!-- end: Header Area -->
@@ -1323,8 +1360,10 @@
     </div>
   </footer>
   <!-- end: Footer Area -->
+  <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/imagesloaded-pkgd.js"></script>
   <script src="assets/js/isotope.pkgd.min.js"></script>
+  <script src="assets/js/swiper.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
