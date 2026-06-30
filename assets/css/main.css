@@ -778,7 +778,9 @@ img {
 }
 
 .feature-main-wrap .acc[open] {
-	box-shadow: 0px 32px 35px 0px rgb(147, 149, 152, 0.15);
+	position: relative;
+	box-shadow: 0px 32px 35px 0px rgb(147, 149, 152, 0.19);
+	z-index: 1;
 }
 
 .feature-main-wrap .acc summary {
@@ -1123,8 +1125,8 @@ img {
 }
 
 .reviews-main-wrap {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	column-count: 4;
+	column-gap: 24px;
 	gap: 22px;
 }
 
@@ -1132,6 +1134,7 @@ img {
 	background: var(--card);
 	border: 1px solid var(--line);
 	box-shadow: 0px 1.96px 9.8px 0px var(--shadow);
+	margin-bottom: 24px;
 	padding: 30px 34px;
 }
 
@@ -1468,6 +1471,9 @@ img {
 	.hero-main-wrap .hero-cta {
 		gap: 20px;
 	}
+	.reviews-item {
+		padding: 30px 24px;
+	}
 }
 
 @media (max-width: 1199px) {
@@ -1515,6 +1521,10 @@ img {
 	.faq-main-wrap {
 		gap: 20px;
 		grid-template-columns: 1fr;
+	}
+
+	.reviews-main-wrap {
+		column-count: 2;
 	}
 }
 
