@@ -163,7 +163,12 @@ img {
 	font-family: var(--sds-ff-heading);
 	font-weight: 500;
 	font-size: 18px;
+	transition: 0.3s all;
 	line-height: 1;
+}
+
+.btn-transparent:hover {
+	color: var(--accent);
 }
 
 /* ---------- Header ---------- */
@@ -635,7 +640,12 @@ img {
 	color: var(--card);
 	background: rgba(48, 102, 241, 0.3);
 	padding: 7px 14px;
+	transition: 0.3s all;
 	line-height: 1;
+}
+
+.demo-item .view-btn:hover {
+	background-color: rgba(48, 102, 241, 1);
 }
 
 .demo-button {
@@ -1356,6 +1366,7 @@ img {
 	color: var(--ink);
 	font-size: 16px;
 	font-family: var(--sds-ff-heading);
+	cursor: pointer;
 	border: none;
 }
 
