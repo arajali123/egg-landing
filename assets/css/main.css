@@ -778,7 +778,7 @@ img {
 }
 
 .feature-main-wrap .acc[open] {
-	box-shadow: 0px 32px 35px 0px #93959826;
+	box-shadow: 0px 32px 35px 0px rgb(147, 149, 152, 0.15);
 }
 
 .feature-main-wrap .acc summary {
