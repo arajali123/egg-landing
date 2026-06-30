@@ -84,6 +84,25 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+// faq JS
+document.addEventListener("DOMContentLoaded", function () {
+	document.querySelectorAll(".acc").forEach(item => {
+		item.addEventListener("toggle", function () {
+			if (this.open) {
+				document.querySelectorAll(".acc").forEach(other => {
+					if (other !== this) {
+						other.removeAttribute("open");
+						other.classList.remove("active");
+					}
+				});
+				this.classList.add("active");
+			} else {
+				this.classList.remove("active");
+			}
+		});
+	});
+});
+
 // Testimonial Slider Js
 if ($(".testimonial-slider").length > 0) {
 	var testimonial = new Swiper(".testimonial-slider", {

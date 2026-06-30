@@ -53,8 +53,8 @@ h4,
 h5,
 h6 {
 	color: var(--ink);
-	line-height: 1.14;
-	font-weight: 500;
+	line-height: 1.18;
+	font-weight: 600;
 	letter-spacing: -0.01em;
 	font-family: var(--sds-ff-heading);
 }
@@ -311,6 +311,10 @@ img {
 	position: relative;
 }
 
+.hero-section .page-width {
+	max-width: 1615px;
+}
+
 .hero-section::before {
 	content: "";
 	position: absolute;
@@ -340,12 +344,13 @@ img {
 
 .hero-main-wrap {
 	display: flex;
-	gap: 25px;
+	justify-content: end;
+	gap: 85px;
 }
 
 .hero-main-wrap .hero-content {
 	padding-top: 110px;
-	max-width: 710px;
+	max-width: 640px;
 	width: 100%;
 }
 
@@ -381,6 +386,8 @@ img {
 	font-size: 22px;
 	font-family: var(--sds-ff-heading);
 	margin-bottom: 47px;
+	max-width: 615px;
+	width: 100%;
 	line-height: 1.4;
 }
 
@@ -436,7 +443,7 @@ img {
 .hero-main-wrap .hero-thumb-wrap .accentTitle {
 	position: absolute;
 	bottom: 35px;
-	right: -60px;
+	right: -65px;
 	font-size: 130px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -459,11 +466,12 @@ img {
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: -15px;
+	bottom: -45px;
 	background: var(--card);
 	box-shadow: 0px 35px 75px 0px var(--shadow-1);
-	padding: 17px 25px;
-	width: 910px;
+	padding: 30px 34px;
+	width: 925px;
+	z-index: 1;
 }
 .hero-main-wrap .stats-shell .stats {
 	display: flex;
@@ -473,6 +481,13 @@ img {
 
 .hero-main-wrap .stats-shell .stats .stat .ic {
 	display: flex;
+	width: 54px;
+	height: 54px;
+}
+
+.hero-main-wrap .stats-shell .stats .stat .ic img {
+	width: 100%;
+	height: 100%;
 }
 
 .hero-main-wrap .stats-shell .stats .stat {
@@ -611,8 +626,29 @@ img {
 }
 
 .demo-item .demo-thumb {
+	position: relative;
 	display: flex;
 	margin-bottom: 10px;
+}
+
+.demo-item .demo-thumb::before {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(152.97deg, rgba(0, 0, 0, 0.4));
+	-webkit-backdrop-filter: blur(6.5px);
+	backdrop-filter: blur(6.5px);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s all;
+}
+
+.demo-item:hover .demo-thumb::before {
+	opacity: 1;
+	visibility: visible;
 }
 
 .demo-item .demo-thumb img {
@@ -638,14 +674,18 @@ img {
 	font-size: 15px;
 	font-family: var(--sds-ff-heading);
 	color: var(--card);
-	background: rgba(48, 102, 241, 0.3);
+	background: rgba(48, 102, 241, 1);
 	padding: 7px 14px;
 	transition: 0.3s all;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0);
 	line-height: 1;
 }
 
-.demo-item .view-btn:hover {
-	background-color: rgba(48, 102, 241, 1);
+.demo-item:hover .view-btn {
+	transform: translate(-50%, -50%) scale(1);
 }
 
 .demo-button {
@@ -693,10 +733,13 @@ img {
 	text-align: start;
 	gap: 50px;
 	max-width: 100%;
+	align-items: end;
+	margin-bottom: 44px;
 }
 
 .feature-section .sec-heading.style-2 .sec-title {
 	width: 50%;
+	margin-bottom: 0;
 }
 
 .feature-section .sec-heading.style-2 .sec-desc {
@@ -735,7 +778,7 @@ img {
 }
 
 .feature-main-wrap .acc[open] {
-	box-shadow: var(--shadow-pop);
+	box-shadow: 0px 32px 35px 0px #93959826;
 }
 
 .feature-main-wrap .acc summary {
@@ -856,7 +899,7 @@ img {
 	border-radius: var(--radius);
 	overflow: hidden;
 	box-shadow: 0 4px 26px rgba(63, 53, 40, 0.08);
-	padding: 25px 25px 14px 25px;
+	padding: 25px 25px 0px 25px;
 	overflow-x: auto;
 }
 
@@ -937,7 +980,8 @@ img {
 
 .pricing-section .btn-primary {
 	font-weight: 700;
-	padding: 12px 28px;
+	padding: 16px 28px;
+	margin-top: 10px;
 }
 
 /* Steps CSS */
@@ -1390,8 +1434,7 @@ img {
 /* Responsive */
 @media (max-width: 1599px) {
 	.hero-main-wrap .stats-shell {
-		padding: 17px 15px;
-		width: 865px;
+		width: 895px;
 	}
 	.hero-main-wrap .stats-shell .stats {
 		gap: 15px;
@@ -1406,6 +1449,12 @@ img {
 		right: -20px;
 		font-size: 100px;
 	}
+	.hero-section .page-width {
+		max-width: 1310px;
+	}
+	.hero-main-wrap .hero-content .hero-rating {
+		margin-bottom: 60px;
+	}
 }
 
 @media (max-width: 1399px) {
@@ -1414,7 +1463,10 @@ img {
 		padding-top: 80px;
 	}
 	.hero-main-wrap .stats-shell {
-		width: 910px;
+		width: 985px;
+	}
+	.hero-main-wrap .hero-cta {
+		gap: 20px;
 	}
 }
 
@@ -1630,5 +1682,12 @@ img {
 		width: 28px;
 		height: 28px;
 		font-size: 14px;
+	}
+	.demo-item .demo-thumb::before {
+		opacity: 1;
+		visibility: visible;
+	}
+	.demo-item .view-btn {
+		transform: translate(-50%, -50%) scale(1);
 	}
 }
